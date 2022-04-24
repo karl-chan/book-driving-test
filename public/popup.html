@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>Book driving test</title>
+</head>
+
+<body>
+
+  <div>
+    <span>Postcode: </span><input type="text" id="postcode" />
+  </div>
+
+  <div>
+    <span>Test centres (separate by comma): </span><input type="text" id="testCentres" />
+  </div>
+
+  <div style="display:flex; flex-direction:row;">
+    <div>
+      <span>Start date: </span><input type="date" id="startDate" />
+    </div>
+    <div>
+      <span>End date: </span><input type="date" id="endDate" />
+    </div>
+  </div>
+
+  <div style="display:flex; flex-direction:row;">
+    <div>
+      <span>Start time: </span><input type="time" id="startTime" />
+    </div>
+    <div>
+      <span>End time: </span><input type="time" id="endTime" />
+    </div>
+  </div>
+
+  <div>
+    <label for="allowLaterTestDates">Allow later test dates?</label>
+    <input type="checkbox" id="allowLaterTestDates" name="allowLaterTestDates">
+  </div>
+
+
+  <button id="startStop">Start</button>
+  <button id="clear">Clear</button>
+
+  <div id="message"></div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

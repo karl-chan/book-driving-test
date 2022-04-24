@@ -1,0 +1,25 @@
+{
+  "name": "Book Driving Test",
+  "description": "Autobook your driving test",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+     "storage",
+     "tabs"
+  ],
+  "background": {
+     "service_worker": "background.js"
+  },
+  "content_scripts": [
+   {
+      "matches": ["https://driverpracticaltest.dvsa.gov.uk/manage*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "host_permissions": [
+     "https://driverpracticaltest.dvsa.gov.uk/"
+  ],
+  "action": {
+     "default_popup": "popup.html"
+  }
+}
